@@ -32,6 +32,8 @@ const Sidebar = () => {
     {
       title: "Статистика",
       icon: MdAssessment,
+      subtitle1: "Общая статистика",
+      subtitle2: "Статистика заказов",
       id: 3,
     },
     {
@@ -70,12 +72,25 @@ const Sidebar = () => {
           {links.map((link, id) => {
             return (
               <li key={id}>
-                <span className={s.links_effect}></span>
                 <a href="#">
+                  <span className={s.links_effect}></span>
                   {<link.icon className={s.icon} />}
-                  <span className={s.title}>{link.title}</span>
-                  <span className={s.subtitle1}>{link.subtitle1 || null}</span>
-                  <span className={s.subtitle2}>{link.subtitle2 || null}</span>
+
+                  <div className={s.subtitles}>
+                    <span className={s.title}>{link.title}</span>
+
+                    {link.subtitle1 && (
+                      <span className={s.subtitle1}>
+                        {link.subtitle1 || null}
+                      </span>
+                    )}
+
+                    {link.subtitle2 && (
+                      <span className={s.subtitle2}>
+                        {link.subtitle2 || null}
+                      </span>
+                    )}
+                  </div>
                 </a>
               </li>
             );
