@@ -5,36 +5,6 @@
   color: $bg_color_2;
 }
 
-.header {
-  background-color: $bg_color_2;
-
-  display: flex;
-  justify-content: space-around;
-
-  height: 3.75rem;
-  padding: 1.3rem 0;
-  text-transform: uppercase;
-  position: relative;
-
-  .logo {
-    img {
-      position: absolute;
-      top: 0.7rem;
-      left: 1.5rem;
-
-      width: 5rem;
-    }
-  }
-
-  span {
-    color: $color_2;
-    width: 5rem;
-    font-size: 0.5rem;
-    line-height: 0.6rem;
-    font-weight: 300;
-  }
-}
-
 .brand {
   background-color: $bg_color_1;
 }
