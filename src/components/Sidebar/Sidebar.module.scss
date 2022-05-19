@@ -14,16 +14,20 @@
   height: 3.75rem;
   padding: 1.3rem 0;
   text-transform: uppercase;
+  position: relative;
 
   .logo {
-    h2 {
-      font-size: 1rem;
-      color: $color_2;
-      margin: 0 0.4rem;
+    img {
+      position: absolute;
+      top: 0.7rem;
+      left: 1.5rem;
+
+      width: 5rem;
     }
   }
 
   span {
+    color: $color_2;
     width: 5rem;
     font-size: 0.5rem;
     line-height: 0.6rem;
@@ -33,66 +37,4 @@
 
 .brand {
   background-color: $bg_color_1;
-}
-
-.links {
-  li {
-    border-bottom: 1px solid $bg_color_3;
-
-    list-style-type: none;
-    cursor: pointer;
-
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.2rem 0;
-
-    &:first-child {
-      background-color: $bg_color_3;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-
-      gap: 0.7rem;
-      margin-left: 1rem;
-
-      transition: 0.5s ease-in-out;
-      color: $color_1;
-
-      &:active {
-        color: $color_2;
-      }
-
-      &:hover {
-        color: $color_2;
-      }
-
-      .icon {
-        display: block;
-        margin-top: 0;
-        margin-bottom: auto;
-
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-  }
-}
-
-.subtitles {
-  display: flex;
-  flex-direction: column;
-
-  padding-top: 3px;
-  gap: 1rem;
-
-  & > .subtitle1,
-  .subtitle2 {
-    font-size: 0.8rem;
-
-    &:not(:hover) {
-      color: $color_1;
-    }
-  }
 }
