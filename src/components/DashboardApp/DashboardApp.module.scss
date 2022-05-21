@@ -17,4 +17,10 @@
       margin: 0.35rem 0;
     }
   }
+  .dashboard__chart {
+    background-color: $chart_bg;
+    color: $color_3;
+
+    margin: 0 1.3rem;
+  }
 }

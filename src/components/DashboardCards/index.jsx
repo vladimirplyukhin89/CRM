@@ -8,7 +8,7 @@ import { MdAccountBalanceWallet } from "react-icons/md";
 
 const DashboardCards = () => {
   return (
-    <arcticle className={s.dashboard__cards}>
+    <div className={s.dashboard__cards}>
       <div className={s.dashboard__cards_wrapper1}>
         <span>Заявки</span>
         <MdNotifications className={s.dashboard__cards_img} />
@@ -29,7 +29,7 @@ const DashboardCards = () => {
 
         <CardStatistics />
       </div>
-    </arcticle>
+    </div>
   );
 };
 

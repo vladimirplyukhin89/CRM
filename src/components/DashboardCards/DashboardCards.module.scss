@@ -3,9 +3,10 @@
 
 .dashboard__cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: stretch;
   flex-flow: row nowrap;
+  margin: 0 12px;
 
   .dashboard__cards_wrapper1 {
     @include card-filler;
@@ -33,7 +34,7 @@
     width: 5rem;
     height: 5rem;
     top: 1rem;
-    left: 13rem;
+    left: 15rem;
     opacity: 0.6;
   }
 }
