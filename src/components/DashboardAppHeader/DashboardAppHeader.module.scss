@@ -1,0 +1,13 @@
+@import "../../scss/base/vars";
+
+.header {
+  background-color: $bg_color_1;
+  color: $color_1;
+
+  display: grid;
+  grid-template-columns: 120px 120px 1fr;
+
+  align-items: center;
+
+  height: 3.75rem;
+}

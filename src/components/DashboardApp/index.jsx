@@ -1,30 +1,20 @@
+import DashboardAppHeader from "../DashboardAppHeader";
+import DashboardCards from "../DashboardCards";
 import s from "./DashboardApp.module.scss";
-
-// для карточки
-//import { MdNotifications } from "react-icons/md";
-//import { MdOutlineTaskAlt } from "react-icons/md";
-// для хэдера
-import { MdOutlineAcUnit } from "react-icons/md";
-import { MdAccountBalanceWallet } from "react-icons/md";
-import { MdLogout } from "react-icons/md";
 
 const DashboardApp = () => {
   return (
-    <div className={s.dashboard}>
-      <div className={s.header}>
-        <div className={s.header__account}>
-          <div className={s.image}>
-            <MdOutlineAcUnit />
-            <span>0</span>
-          </div>
-          <div className={s.image}>
-            <MdAccountBalanceWallet />
-            <span>0</span>
-          </div>
-        </div>
-        <div className={s.header__logistics}></div>
+    <section className={s.dashboard}>
+      <DashboardAppHeader />
+
+      <div className={s.dashboard__title}>
+        <p className={s.dashboard__title_text}>Главный экран</p>
       </div>
-    </div>
+
+      <DashboardCards />
+
+      <arcticle className={s.dashboard__chart}></arcticle>
+    </section>
   );
 };
 

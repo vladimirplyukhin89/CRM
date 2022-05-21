@@ -1,0 +1,39 @@
+@import "../../scss/base/vars";
+
+.header__account {
+  display: flex;
+
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $color_2;
+  }
+
+  .header__account_image {
+    width: 2rem;
+    height: 1.6rem;
+
+    margin: auto 0.4rem;
+  }
+
+  .header__account_info {
+    display: flex;
+    flex-direction: column;
+
+    .header__account_number {
+      color: $color_2;
+
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    & > .header__account_words {
+      color: $color_1;
+
+      font-size: 11px;
+    }
+  }
+}

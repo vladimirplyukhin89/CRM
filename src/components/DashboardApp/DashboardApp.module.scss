@@ -2,19 +2,19 @@
 
 .dashboard {
   background-color: $bg_color_4;
-}
 
-.header {
-  background-color: $bg_color_1;
+  .dashboard__title {
+    width: 100%;
+    background-color: $color_2;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 3.75rem;
-  padding: 1.3rem 0;
+    display: block;
+    padding: 1.2rem 0;
+    padding-left: 1.4rem;
 
-  .header__account {
-    //display: flex;
-    //flex-direction: row;
+    p {
+      color: $color_3;
+      font-size: 18px;
+      margin: 0.35rem 0;
+    }
   }
 }

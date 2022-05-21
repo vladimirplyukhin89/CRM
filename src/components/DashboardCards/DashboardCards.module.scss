@@ -1,0 +1,39 @@
+@import "../../scss/base/vars";
+@import "../../scss/base/mixin";
+
+.dashboard__cards {
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
+  flex-flow: row nowrap;
+
+  .dashboard__cards_wrapper1 {
+    @include card-filler;
+    background-image: $card_c_1;
+  }
+
+  .dashboard__cards_wrapper2 {
+    @include card-filler;
+    background-image: $card_c_2;
+  }
+
+  .dashboard__cards_wrapper3 {
+    @include card-filler;
+    background-image: $card_c_3;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .dashboard__cards_img {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 1rem;
+    left: 13rem;
+    opacity: 0.6;
+  }
+}
